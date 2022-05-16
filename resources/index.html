@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Nessary Meta Tags -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="A simple and easy to use calculator in the Web."
+		/>
+		<meta name="author" content="The AnaKen" />
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:title" content="CalCulator" />
+		<meta
+			name="twitter:description"
+			content="A simple and easy to use calculator in the Web."
+		/>
+		<meta name="twitter:image" content="imgs/screenshot-square.png" />
+
+		<!-- More Twitter Meta Tags -->
+		<meta
+			property="og:description"
+			content="A simple and easy to use calculator in the Web."
+		/>
+		<meta property="og:image" content="imgs/screenshot-square.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="og:url" content="https://kalculatorjs.netlify.app/" />
+		<meta
+			property="twitter:url"
+			content="https://kalculatorjs.netlify.app/"
+		/>
+		<meta
+			property="og:description"
+			content="A simple and easy to use calculator in the Web."
+		/>
+		<meta name="twitter:image:alt" content="Website screenshot" />
+
+		<!-- FaceBook Meta tags -->
+		<meta property="og:title" content="Calculator" />
+		<meta property="og:type" content="application" />
+		<meta property="og:url" content="https://kalculatorjs.netlify.app/" />
+		<meta property="og:image" content="imgs/screenshot-full.png" />
+		<meta property="og:image:url" content="imgs/screenshot-full.png" />
+
+		<title>CalCulator</title>
+
+		<!-- auto dark theme -->
+		<meta name="color-scheme" content="dark" />
+
+		<!-- Custom Css & Js -->
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/index.js" type="module" defer></script>
+
+		<!-- Font Awsome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<div class="container-dada">
+			<h1>KalCulator</h1>
+			<div class="calculator-body">
+				<div id="output">
+					<input type="text" disabled />
+					<button><i class="fa-solid fa-delete-left"></i></button>
+				</div>
+				<div id="keys">
+					<button class="operator" id="parenthesisOpen">(</button>
+					<button class="operator" id="parenthesisClose">)</button>
+					<button class="operator" id="clear">C</button>
+					<button class="operator" id="percentage">%</button>
+					<button class="operator" id="times">&times;</button>
+					<button class="operator" id="minus">-</button>
+					<button class="operator" id="plus">+</button>
+					<button class="operator" id="divide">÷</button>
+					<button class="key" id="key1">1</button>
+					<button class="key" id="key2">2</button>
+					<button class="key" id="key3">3</button>
+					<button class="key" id="key4">4</button>
+					<button class="key" id="key5">5</button>
+					<button class="key" id="key6">6</button>
+					<button class="key" id="key7">7</button>
+					<button class="key" id="key8">8</button>
+					<button class="key" id="key9">9</button>
+					<button class="key" id="key0">0</button>
+					<button class="operator" id="decimal">.</button>
+					<button class="operator" id="equal">=</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/neutralino.js"></script>
+		<!-- Your app's source files -->
+		<script src="js/main.js"></script>
+	</body>
+</html>

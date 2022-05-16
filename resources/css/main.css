@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat&family=Poppins&family=Share+Tech+Mono&display=swap");
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  background-color: #282c37;
+  color: #fffafe;
+  overflow: hidden;
+}
+
+.container-dada {
+  margin-top: 10rem;
+  margin-right: 5rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container-dada h1 {
+  text-decoration: underline;
+  position: absolute;
+  top: 0;
+}
+.container-dada .calculator-body {
+  height: 30rem;
+  width: 25rem;
+  border: 0.1rem solid #00a85a;
+  border-radius: 1em;
+  background-color: #1b1e26;
+}
+.container-dada .calculator-body #output {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  -webkit-margin-start: 1em;
+          margin-inline-start: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.container-dada .calculator-body #output input[disabled] {
+  width: 80%;
+  height: 2rem;
+  overflow-x: scroll;
+  font-family: "Share Tech Mono";
+  text-align: right;
+  font-size: 1.5rem;
+}
+.container-dada .calculator-body #output button {
+  background-color: transparent;
+  border: none;
+}
+.container-dada .calculator-body #output button i {
+  -webkit-margin-before: 0.005em;
+          margin-block-start: 0.005em;
+  height: 0.1rem;
+  font-size: 1.8rem;
+  color: #fffafe;
+  cursor: pointer;
+}
+.container-dada .calculator-body #keys {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 5.5rem);
+  gap: 1em;
+  place-items: center;
+  margin-left: 1.5em;
+  grid-template-areas: "parenthesisOpen parenthesisClose clear percentage" "seven eight nine times" "four five six minus" "one two three plus" "zero decimal equal divide";
+}
+.container-dada .calculator-body #keys button {
+  cursor: pointer;
+  background-color: #282c37;
+  height: 4rem;
+  width: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  padding: 0.5em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Courier Prime";
+  text-align: center;
+  border-radius: 0.5em;
+  color: #fffafe;
+  display: flex;
+  justify-content: center;
+}
+.container-dada .calculator-body #keys #key1 {
+  grid-area: one;
+}
+.container-dada .calculator-body #keys #key2 {
+  grid-area: two;
+}
+.container-dada .calculator-body #keys #key3 {
+  grid-area: three;
+}
+.container-dada .calculator-body #keys #key4 {
+  grid-area: four;
+}
+.container-dada .calculator-body #keys #key5 {
+  grid-area: five;
+}
+.container-dada .calculator-body #keys #key6 {
+  grid-area: six;
+}
+.container-dada .calculator-body #keys #key7 {
+  grid-area: seven;
+}
+.container-dada .calculator-body #keys #key8 {
+  grid-area: eight;
+}
+.container-dada .calculator-body #keys #key9 {
+  grid-area: nine;
+}
+.container-dada .calculator-body #keys #key0 {
+  grid-area: zero;
+}
+.container-dada .calculator-body #keys #decimal {
+  grid-area: decimal;
+}
+.container-dada .calculator-body #keys #clear {
+  grid-area: clear;
+}
+.container-dada .calculator-body #keys #parenthesisOpen {
+  grid-area: parenthesisOpen;
+}
+.container-dada .calculator-body #keys #parenthesisClose {
+  grid-area: parenthesisClose;
+}
+.container-dada .calculator-body #keys #times {
+  grid-area: times;
+}
+.container-dada .calculator-body #keys #divide {
+  grid-area: divide;
+}
+.container-dada .calculator-body #keys #minus {
+  grid-area: minus;
+}
+.container-dada .calculator-body #keys #plus {
+  grid-area: plus;
+}
+.container-dada .calculator-body #keys #equal {
+  grid-area: equal;
+}
+.container-dada .calculator-body #keys #percentage {
+  grid-area: percentage;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #282c37;
+    color: #eee;
+  }
+
+  input {
+    color: #eee;
+    background-color: #3b3b3b;
+  }
+
+  .calculator-body {
+    background-color: #1b1e26;
+  }
+  .calculator-body button {
+    color: #eee;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,183 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat&family=Poppins&family=Share+Tech+Mono&display=swap");
+
+// Variables
+$background: #282c37;
+$accent: #fffafe;
+$main: #00a85a;
+
+body {
+	height: 100vh;
+	width: 100vw;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "poppins";
+	background-color: #282c37;
+	color: $accent;
+	overflow: hidden;
+}
+
+.container-dada {
+	margin-top: 10rem;
+	// margin-left: auto;
+	margin-right: 5rem;
+	// margin-bottom: 50%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+
+	h1 {
+		text-decoration: underline;
+		position: absolute;
+		top: 0;
+	}
+
+	.calculator-body {
+		// height: 30rem;
+		height: 30rem;
+		width: 25rem;
+		border: 0.1rem solid $main;
+		border-radius: 1em;
+		background-color: #1b1e26;
+
+		#output {
+			margin-top: 1em;
+			margin-bottom: 1em;
+			margin-inline-start: 1em;
+			display: flex;
+			justify-content: center;
+			gap: 01rem;
+			input[disabled] {
+				width: 80%;
+				height: 2rem;
+				overflow-x: scroll;
+				font-family: "Share Tech Mono";
+				text-align: right;
+				font-size: 1.5rem;
+			}
+			button {
+				background-color: transparent;
+				border: none;
+
+				i {
+					margin-block-start: 0.005em;
+					height: 0.1rem;
+					font-size: 1.8rem;
+					color: $accent;
+
+					cursor: pointer;
+				}
+			}
+		}
+		#keys {
+			margin-top: 2em;
+			margin-bottom: 1em;
+			display: grid;
+			grid-template-columns: repeat(4, 5.5rem);
+			gap: 1em;
+			place-items: center;
+			margin-left: 1.5em;
+			grid-template-areas:
+				"parenthesisOpen parenthesisClose clear percentage"
+				"seven eight nine times"
+				"four five six minus"
+				"one two three plus"
+				"zero decimal equal divide";
+			button {
+				cursor: pointer;
+				background-color: $background;
+				height: 4rem;
+				width: 1rem;
+				padding: 1rem;
+				font-size: 2rem;
+				padding: 0.5em;
+				width: max-content;
+				font-family: "Courier Prime";
+				text-align: center;
+				border-radius: 0.5em;
+				color: $accent;
+				display: flex;
+				justify-content: center;
+			}
+			#key1 {
+				grid-area: one;
+			}
+			#key2 {
+				grid-area: two;
+			}
+			#key3 {
+				grid-area: three;
+			}
+			#key4 {
+				grid-area: four;
+			}
+			#key5 {
+				grid-area: five;
+			}
+			#key6 {
+				grid-area: six;
+			}
+			#key7 {
+				grid-area: seven;
+			}
+			#key8 {
+				grid-area: eight;
+			}
+			#key9 {
+				grid-area: nine;
+			}
+			#key0 {
+				grid-area: zero;
+			}
+			#decimal {
+				grid-area: decimal;
+			}
+			#clear {
+				grid-area: clear;
+			}
+			#parenthesisOpen {
+				grid-area: parenthesisOpen;
+			}
+			#parenthesisClose {
+				grid-area: parenthesisClose;
+			}
+			#times {
+				grid-area: times;
+			}
+			#divide {
+				grid-area: divide;
+			}
+			#minus {
+				grid-area: minus;
+			}
+			#plus {
+				grid-area: plus;
+			}
+			#equal {
+				grid-area: equal;
+			}
+			#percentage {
+				grid-area: percentage;
+			}
+		}
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: #282c37;
+		color: #eee;
+	}
+	input {
+		color: #eee;
+		background-color: #3b3b3b;
+	}
+	.calculator-body {
+		background-color: #1b1e26;
+
+		button {
+			color: #eee;
+		}
+	}
+}
